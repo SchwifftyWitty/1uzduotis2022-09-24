@@ -1,0 +1,110 @@
+body{
+    background: #262626;
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+    margin-top: 50px;
+    transition: 2s;
+}
+
+a{
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-family: calibri;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+nav:hover a.home{
+    opacity: 1;
+    transition: 0.5s linear;
+    transform: rotate(1turn);
+}
+nav:hover a.about{
+    opacity: 1;
+    transition: 0.5s linear;
+    transform: rotate(-1turn);
+}
+nav:hover a.contact-us{
+    opacity: 1;
+    transition: 0.5s linear;
+    transform: rotate(1turn);
+}
+nav:hover a.faq{
+    opacity: 1;
+    transition: 0.5s linear;
+    transform: rotate(-1turn);
+}
+
+nav.home::before{
+    content: "";
+    position: absolute;
+    height: 32px;
+    width: 67px;
+    background: transparent;
+    z-index: -1;
+    transition: 1s;
+}
+
+nav.home:hover::before{
+    background: red;
+    opacity: 0.5;
+    transform: rotate(1turn);
+    border-radius: 4px;
+    transition: 0.5s linear;
+}
+nav.about::before{
+    content: "";
+    position: absolute;
+    height: 32px;
+    width: 74px;
+    background: transparent;
+    z-index: -1;
+    transition: 1s;
+}
+
+nav.about:hover::before{
+    background: green;
+    opacity: 0.5;
+    transform: rotate(-1turn);
+    border-radius: 4px;
+    transition: 0.5s linear;
+}
+nav.contact-us::before{
+    content: "";
+    position: absolute;
+    height: 32px;
+    width: 130px;
+    background: transparent;
+    z-index: -1;
+    transition: 1s;
+}
+
+nav.contact-us:hover::before{
+    background: red;
+    opacity: 0.5;
+    transform: rotate(1turn);
+    border-radius: 4px;
+    transition: 0.5s linear;
+}
+nav.faq::before{
+    content: "";
+    position: absolute;
+    height: 32px;
+    width: 43px;
+    background: transparent;
+    z-index: -1;
+    transition: 1s;
+}
+
+nav.faq:hover::before{
+    background: green;
+    opacity: 0.5;
+    transform: rotate(-1turn);
+    border-radius: 4px;
+    transition: 0.5s linear;
+}
